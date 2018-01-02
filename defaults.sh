@@ -45,7 +45,7 @@ echo "$AzulClaro \n Atualizando pacotes... $SemCor"
 sudo apt-get update -y && sudo apt-get upgrade -y
 
 echo "$AzulClaro \n Baixando pacotes necessarios para funcionamento... $SemCor" 
-sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r) virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms
 
 if [ ! -d $DIR ]; then
         echo "$AzulClaro \n Montando CD convidados virtualbox...  $SemCor" 
