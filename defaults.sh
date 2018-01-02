@@ -80,3 +80,9 @@ sudo phpenmod mbstring
 # Restart Apache
 echo -e "$AzulClaro \n Reiniciando apache $SemCor"
 sudo service apache2 restart
+
+echo -e "$AzulClaro \n Preparando para montar diretorios $SemCor"
+sudo ln -sf /opt/VBoxGuestAdditions*/other/mount.vboxsf /sbin/mount.vboxsf
+
+echo -e "$AzulClaro \n Executar seguinte comando: \n mount -t vboxsf -o uid=$UID,gid=$(id -g) {PastaMontadaMaquinaPrincipal} {DiretorioMaquinaVirtual} $SemCor"
+
