@@ -78,7 +78,9 @@ sudo phpenmod mcrypt
 sudo phpenmod mbstring
 
 # Restart Apache
-echo -e "$AzulClaro \n Reiniciando apache $SemCor"
+echo -e "$AzulClaro \n Habilitando rewrite e reiniciando apache $SemCor"
+sudo a2enmod rewrite
+
 sudo service apache2 restart
 
 echo -e "$AzulClaro \n Preparando para montar diretorios $SemCor"
