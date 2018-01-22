@@ -7,6 +7,7 @@
 #
 # 1 - CD dos Adicionais inserido
 # 2 - Pasta que ira compartilhar com a /var/www/html montada no VirtualBox em "Configuracoes>Pastas Compartilhadas"
+# 3 - Ir no apache.conf e no local onde temos /var/www colocar All ao invés de none
 #                
 ##########################
 
